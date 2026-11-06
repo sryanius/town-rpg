@@ -1,0 +1,164 @@
+{
+ "ui": {
+  "panel": {
+   "type": "nine",
+   "w": 292,
+   "h": 294,
+   "edge": 70
+  },
+  "inner": {
+   "type": "nine",
+   "w": 128,
+   "h": 129,
+   "edge": 31
+  },
+  "card": {
+   "type": "nine",
+   "w": 182,
+   "h": 184,
+   "edge": 52
+  },
+  "scroll": {
+   "type": "three",
+   "w": 348,
+   "h": 100,
+   "edge": 56
+  },
+  "button": {
+   "type": "three",
+   "w": 324,
+   "h": 80,
+   "edge": 39
+  },
+  "bar": {
+   "type": "three",
+   "w": 1553,
+   "h": 60,
+   "edge": 78
+  },
+  "barfill": {
+   "type": "three",
+   "w": 702,
+   "h": 46,
+   "edge": 56
+  },
+  "label": {
+   "type": "three",
+   "w": 316,
+   "h": 57,
+   "edge": 16
+  },
+  "topbar": {
+   "type": "three",
+   "w": 1342,
+   "h": 86,
+   "edge": 81
+  },
+  "medal": {
+   "type": "image",
+   "w": 128,
+   "h": 128
+  },
+  "parchment": {
+   "type": "image",
+   "w": 768,
+   "h": 768
+  }
+ },
+ "cards": [
+  "armor",
+  "base",
+  "build",
+  "explore",
+  "g_archive",
+  "g_exit",
+  "g_quest",
+  "g_roster",
+  "g_storage",
+  "heal",
+  "homefac",
+  "hospital",
+  "invite",
+  "market",
+  "outside",
+  "revive",
+  "rumor",
+  "tavern",
+  "townfac",
+  "weapon"
+ ],
+ "bg": [
+  "desert",
+  "desert_soft",
+  "desert_blur",
+  "hall",
+  "hall_soft",
+  "hall_blur",
+  "hospital",
+  "hospital_soft",
+  "hospital_blur",
+  "market",
+  "market_soft",
+  "market_blur",
+  "tavern",
+  "tavern_soft",
+  "tavern_blur",
+  "village",
+  "village_soft",
+  "village_blur",
+  "workshop",
+  "workshop_soft",
+  "workshop_blur"
+ ],
+ "icons": [
+  "bag",
+  "banner",
+  "book",
+  "chest",
+  "clock",
+  "coin",
+  "compass",
+  "crown",
+  "door",
+  "flag",
+  "gear",
+  "gem",
+  "hammer",
+  "heart",
+  "hourglass",
+  "house",
+  "map",
+  "mountain",
+  "mug",
+  "rank",
+  "refresh",
+  "scroll",
+  "shelf"
+ ],
+ "heroes": [
+  "adv_f",
+  "adv_m",
+  "archer",
+  "archer_m",
+  "axeman",
+  "axeman_f",
+  "bearmage",
+  "knight",
+  "knight_f",
+  "mage_m",
+  "monk",
+  "priest",
+  "priest_f",
+  "sage_f",
+  "thief_f",
+  "thief_m"
+ ],
+ "foes": [
+  "assassin",
+  "bandit",
+  "goblin",
+  "rat",
+  "scorpion",
+  "wolf"
+ ]
+}
