@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#EFEBE4" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#13100C" media="(prefers-color-scheme: dark)" />
+  <meta name="description" content="기록자의 마을 시제품의 퀘스트·마을·탐색지·몬스터·아이템·직업·종족·마법·시설 도감" />
+  <link rel="icon" href="icon-192.png" />
+  <title>기록자의 마을 도감</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap" />
+  <!-- 고른 화면 밝기를 그리기 전에 먼저 입힌다(깜빡임 막기) -->
+  <script>try { var t = localStorage.getItem('town.codex.theme'); if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t; } catch (e) { /* 막힌 창 */ }</script>
+  <script type="module" crossorigin src="./assets/codex-DC6r-Di7.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/game-ysByZA5Y.js">
+  <link rel="stylesheet" crossorigin href="./assets/codex-C9vJx91P.css">
+</head>
+<body>
+  <div class="wrap">
+    <nav class="topnav" aria-label="쪽 이동">
+      <a id="back" href="./">← 게임으로</a>
+      <a class="here" href="codex.html" aria-current="page">도감</a>
+      <button type="button" id="theme" class="themebtn">화면: 자동</button>
+    </nav>
+    <header class="mast">
+      <p class="eyebrow">기록자의 마을 · 시제품 자료</p>
+      <h1>도감</h1>
+      <p class="lede">게임에 무엇이 들어 있는지 한눈에 — 퀘스트·마을·탐색지·몬스터·아이템과 지도, 그리고 직업·종족·마법·시설. 게임 자료를 그대로 읽어 그리므로 자료가 늘면 도감도 저절로 늘어납니다.</p>
+      <p class="tabnote" id="tabnote"></p>
+      <div class="stats" id="stats"></div>
+    </header>
+
+    <div class="bar">
+      <div class="segwrap"><span class="seglab">세계</span><div class="seg" id="seg-world" role="group" aria-label="세계 보기"></div></div>
+      <div class="segwrap"><span class="seglab">모험가</span><div class="seg" id="seg-adv" role="group" aria-label="모험가 보기"></div></div>
+      <div class="tools">
+        <input type="search" id="q" placeholder="이름 · 몬스터 · 장소 검색" aria-label="검색" autocomplete="off" />
+        <select id="reg" aria-label="지역"><option value="">모든 지역</option></select>
+        <select id="kind" aria-label="아이템 종류" hidden><option value="">모든 종류</option></select>
+        <span class="count" id="count" aria-live="polite"></span>
+      </div>
+    </div>
+
+    <main id="out"></main>
+
+    <footer class="foot">
+      <p>이 도감은 게임 코드의 자료(<code>src/core/data.ts</code> · <code>map.ts</code>)와 식(<code>game.ts</code> · <code>quest.ts</code>)을 그대로 읽어 그립니다. 게임을 새로 빌드하면 도감도 함께 바뀝니다.</p>
+      <p>빈도 등급별 평균 간격(퀘스트 안에서 배회 조우): <span id="freqnote"></span>. 자유 탐색이면 몬스터는 이 간격의 1/7, 함정은 1/5.</p>
+      <p>시제품에서 아직 뺀 규칙(상태이상·후유증 등)은 여기에도 없습니다.</p>
+    </footer>
+  </div>
+</body>
+</html>
