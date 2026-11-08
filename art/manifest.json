@@ -63,6 +63,11 @@
    "type": "image",
    "w": 768,
    "h": 768
+  },
+  "wood": {
+   "type": "image",
+   "w": 932,
+   "h": 582
   }
  },
  "cards": [
@@ -111,6 +116,11 @@
   "workshop_blur"
  ],
  "icons": [
+  "a_amulet",
+  "a_armor",
+  "a_cloth",
+  "a_helm",
+  "a_shield",
   "bag",
   "banner",
   "book",
@@ -118,6 +128,7 @@
   "clock",
   "coin",
   "compass",
+  "crit",
   "crown",
   "door",
   "flag",
@@ -125,15 +136,25 @@
   "gem",
   "hammer",
   "heart",
+  "hit",
   "hourglass",
   "house",
+  "mana",
   "map",
   "mountain",
   "mug",
+  "party",
   "rank",
   "refresh",
   "scroll",
-  "shelf"
+  "shelf",
+  "w_axe",
+  "w_bow",
+  "w_dagger",
+  "w_greatsword",
+  "w_spear",
+  "w_staff",
+  "w_sword"
  ],
  "heroes": [
   "adv_f",
