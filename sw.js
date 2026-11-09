@@ -36,8 +36,12 @@ self.addEventListener('notificationclick', e => {
 self.addEventListener('fetch', e => {
   const req = e.request;
   if (req.method !== 'GET' || new URL(req.url).origin !== self.location.origin) return;
+  // 첫 화면(index.html)은 브라우저 임시 보관(10분)을 건너뛰고 늘 서버에 새로 묻는다 — 올린 새 판을 바로 받게
+  const page = req.mode === 'navigate' || /\/(index\.html)?$/.test(new URL(req.url).pathname);
+  let ask = req;
+  if (page) { try { ask = new Request(req, { cache: 'no-cache' }); } catch { ask = req; } }   // 옛 브라우저는 화면 요청을 못 고친다 — 그땐 그대로
   e.respondWith(
-    fetch(req)
+    fetch(ask)
       .then(res => {
         if (res.ok) { const copy = res.clone(); caches.open(CACHE).then(c => c.put(req, copy)); }
         return res;
