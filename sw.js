@@ -17,7 +17,7 @@ self.addEventListener('push', e => {
   e.waitUntil((async () => {
     const wins = await self.clients.matchAll({ type: 'window', includeUncontrolled: true });
     if (wins.some(w => w.visibilityState === 'visible' && w.focused)) return;
-    await self.registration.showNotification(d.title || '기록자의 마을', {
+    await self.registration.showNotification(d.title || '길드 연대기', {
       body: d.body || '', tag: d.tag || 'town', renotify: true, icon: 'icon-192.png', data: { url: self.registration.scope },
     });
   })());

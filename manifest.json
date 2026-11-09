@@ -1,6 +1,6 @@
 {
-  "name": "기록자의 마을 (가칭)",
-  "short_name": "기록자의 마을",
+  "name": "길드 연대기",
+  "short_name": "길드 연대기",
   "lang": "ko",
   "start_url": "./",
   "scope": "./",
