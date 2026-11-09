@@ -124,6 +124,7 @@
   "bag",
   "banner",
   "book",
+  "chapel",
   "chest",
   "clock",
   "coin",
@@ -154,8 +155,7 @@
   "w_greatsword",
   "w_spear",
   "w_staff",
-  "w_sword",
-  "chapel"
+  "w_sword"
  ],
  "heroes": [
   "adv_f",
