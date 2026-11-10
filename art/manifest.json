@@ -386,5 +386,16 @@
   "wheel",
   "whitetower",
   "willowwell"
+ ],
+ "fields": [
+  "cave",
+  "coast",
+  "forest",
+  "hill",
+  "mountain",
+  "plain",
+  "ruin",
+  "snow",
+  "swamp"
  ]
 }
